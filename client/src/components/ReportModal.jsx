@@ -28,7 +28,6 @@ const ReportModal = ({ isOpen, onRequestClose, user }) => {
       <div className="text-lg font-bold mb-2">Generated Report</div>
       <div className="mb-2">User: {user.username}</div>
       <div className="mb-2">Email: {user.email}</div>
-      {/* Add more user details as needed */}
       <button onClick={onRequestClose} className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full">
         Close
       </button>
@@ -36,4 +35,4 @@ const ReportModal = ({ isOpen, onRequestClose, user }) => {
   );
 };
 
-export default ReportModal;
+export default ReportModal
