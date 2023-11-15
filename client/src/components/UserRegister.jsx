@@ -12,10 +12,6 @@ const UserRegister = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Perform your registration logic here
-
-    // For demonstration purposes, show a toast
     toast.success('Registration successful!');
   };
 
