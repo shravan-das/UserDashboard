@@ -1,20 +1,32 @@
 import React from 'react';
 import Modal from 'react-modal';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
-Modal.setAppElement('#root'); // Set the root element for accessibility
+Modal.setAppElement('#root'); // Set the root element
 
 const ReportModal = ({ isOpen, onRequestClose, user }) => {
   if (!user) {
-    // If user is null, do not render the modal
     return null;
   }
 
-  const modalStyle = {
+  const modalStyles = {
+    overlay: {
+      backgroundColor: 'rgba(0, 0, 0, 0.7)',
+      backdropFilter: 'blur(2px)',
+      zIndex: 100,
+    },
     content: {
-      width: '50%', // Adjust the width as needed
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      width: '50%', 
       margin: 'auto', // Center the modal
-      borderRadius: '8px',
-      padding: '20px',
+      borderRadius: '12px',
+      padding: '30px',
+      backgroundColor: '#fff',
+      border: '1px solid rgba(0, 0, 0, 0.1)',
+      boxShadow: '0 4px 16px rgba(0, 0, 0, 0.1)',
     },
   };
 
@@ -23,16 +35,43 @@ const ReportModal = ({ isOpen, onRequestClose, user }) => {
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Generated Report Modal"
-      style={modalStyle}
+      style={modalStyles}
     >
-      <div className="text-lg font-bold mb-2">Generated Report</div>
-      <div className="mb-2">User: {user.username}</div>
-      <div className="mb-2">Email: {user.email}</div>
-      <button onClick={onRequestClose} className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full">
+      <div className="text-4xl font-bold mb-6 text-blue-500">Generated Report</div>
+      
+      <div className="text-4xl">
+        <AccountCircleIcon fontSize="large" />
+      </div>
+      
+      <div className="mb-4">
+        <span className="font-bold text-gray-700">User:</span>
+        <span className="ml-2">{user.username}</span>
+      </div>
+      <div className="mb-4">
+        <span className="font-bold text-gray-700">Email:</span>
+        <span className="ml-2">{user.email}</span>
+      </div>
+      <div className="mb-4">
+        <span className="font-bold text-gray-700">Phone:</span>
+        <span className="ml-2">{user.phone}</span>
+      </div>
+      <div className="mb-4">
+        <span className="font-bold text-gray-700">ID:</span>
+        <span className="ml-2">{user.id}</span>
+      </div>
+      <div className="mb-4">
+        <span className="font-bold text-gray-700">Creation Date:</span>
+        <span className="ml-2">{user.created_at}</span>
+      </div>
+      
+      <button
+        onClick={onRequestClose}
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none mt-4"
+      >
         Close
       </button>
     </Modal>
   );
 };
 
-export default ReportModal
+export default ReportModal;

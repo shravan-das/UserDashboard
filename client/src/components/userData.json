@@ -17,14 +17,14 @@
       "id": 3,
       "username": "jane_Mary",
       "email": "jane.smith@example.com",
-      "phone": "987-654-3210",
+      "phone": "9876543210",
       "created_at": "2023-11-15"
     },
     {
       "id": 4,
       "username": "stevie_smith",
       "email": "jane.smith@example.com",
-      "phone": "987-654-3210",
+      "phone": "9876543210",
       "created_at": "2023-11-15"
       },
       
@@ -32,7 +32,7 @@
       "id": 5,
       "username": "jane_saini",
       "email": "jane.smith@example.com",
-      "phone": "987-654-3210",
+      "phone": "9876543210",
       "created_at": "2023-11-15"
       }
   ]
