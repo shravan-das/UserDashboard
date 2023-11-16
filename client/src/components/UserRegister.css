@@ -108,8 +108,8 @@
 .loginBtn , .signUpBtn{
     border: none;
     background-color: rgb(230, 98, 239);
-    color:pink;
-    font: 500 0.9vmax "Roboto";
+    color:rgb(196, 114, 128);
+    font: 800 1vmax "Roboto";
     width: 100%;
     padding: 0.8vmax;
     cursor: pointer;
