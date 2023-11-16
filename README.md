@@ -4,6 +4,15 @@
 
 This web application is designed to provide a user management dashboard with two main tabs: User Details and Account Creation. The User Details tab displays user information fetched from a placeholder database in a searchable table format, allowing users to search for specific entries. The Account Creation tab includes a form for username and password input. Below are the detailed instructions to set up and run the application.
 
+
+## ScreenShots
+
+![Screenshot (160)](https://github.com/shravan-das/UserDashboard/assets/100745475/a1516b71-9e53-44fa-ad59-cd22d1b02fd3)
+![Screenshot (161)](https://github.com/shravan-das/UserDashboard/assets/100745475/b7f62a1d-c874-464b-8c39-1c45021925bb)
+![Screenshot (162)](https://github.com/shravan-das/UserDashboard/assets/100745475/462db2ad-504d-4130-a315-a6ce21f12367)
+![Screenshot (163)](https://github.com/shravan-das/UserDashboard/assets/100745475/50ac5999-7425-4245-966b-a29b8eddc734)
+
+
 ## Requirements
 
 1. **User Details Tab:**
